@@ -32,7 +32,10 @@ body {
 }
 .navbar ul li a:hover{
     text-decoration: none;
-    color:rgb(128, 240, 63);
+    color:rgb(69, 179, 6);
+}
+.navbar ul li a.active {
+    color: #eeea10;
 }
 
 .hero-text {
@@ -69,6 +72,26 @@ body {
     margin-left: 20px;
     color: rgb(241, 177, 80);
 }
+.dis {
+    padding: 50px;
+}
+.cover {
+    display: flex;
+}
+
+.cover1 {
+    background: rgb(219, 214, 214);
+}
+
+.cover1,
+.cover2{
+    width: 100%;
+    height: 60vh;
+    padding-left: 10px;
+}
+.f {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /* end home page*/
 
 /* gallery page */
@@ -77,9 +100,28 @@ h2 {
     font-size: 20px;
     padding: 50px;
 }
+.cover-bottom {
+    text-align: center;
+}
+.btn {
+    color: #eff311;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #eeea10;
+    border-radius: 25px;
+  }
+  
+  /* On mouse-over */
+  .btn:hover {color: #000; 
+    border: 2px solid #eeea10;
+    border-radius: 25px;}
 .picture{
     margin-bottom: 5%;
-    padding: 0 100px;
+    padding: 100px;
 }
 img {
     height: 100%;
@@ -106,7 +148,7 @@ img {
 {
     width: 100%;
     height: 40vh;
-    padding: 20px 50px;
+    padding: 20px;
 }
 .column1,
 .column2,
@@ -243,10 +285,53 @@ a {
     font-weight: 500;
     color:#fff;
 }
+a:hover{
+    color: #eff311;
+}
 i {
     cursor: pointer;
     font-size: 30px;
 }
+i:hover {
+    color: #eff311;
+}
 p {
     text-align: center;
+}
+
+
+/* Resposive */
+
+@media screen and (max-width: 700px) {
+    .cover {
+        width: 100%;
+    }
+    .navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .navbar ul li a {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .logo {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cover {
+        text-align: center;
+    }
+    .na ul li a {
+      text-align: center;
+      float: none;
+    }
+    .navbar .logo {
+        font-size: 30px;
+    }
+    .button {
+        font-size: 20px;
+    }
 }
