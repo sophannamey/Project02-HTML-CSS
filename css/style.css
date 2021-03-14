@@ -95,10 +95,18 @@ img {
 .image9 ,
 .image10,
 .image11,
-.image12{
+.image12,
+.image13,
+.image14,
+.image15,
+.image16,
+.image17,
+.image18,
+.image19
+{
     width: 100%;
     height: 40vh;
-    padding: 30px 30px;
+    padding: 20px 50px;
 }
 .column1,
 .column2,
@@ -119,9 +127,9 @@ img {
     height: 200px;
     padding-top: 50px;
 }
-.column1,
-.column2,
-.column3{
+.column7,
+.column8,
+.column9{
     padding: 50px;
 }
 .cover-contact {
